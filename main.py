@@ -16,7 +16,7 @@ def check_1d(inp):
 if __name__ == '__main__':
     # lr_mat = lin_reg_mat_builder(np.array([["1Aa", "2Aa"], ["3Bb", "4Bb"]]))
     # inp = get_user_input()
-    inp = np.array([["a2A", "b3B"], ["d5D", "e6E"]], dtype=object)
+    inp = np.array([["a2-A", "b3-B"], ["d5-D", "e6-E"]], dtype=object)
     
     if (check_1d(inp)):
         print(generate_predictions_1d(generate_1d_str(np.hstack(inp)), 5))
