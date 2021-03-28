@@ -39,6 +39,8 @@ def predict_at_pos(mat, r, c):
 
 
 def lin_reg_mat_builder(mat):
+    if not (matrix_trim(mat) is True):
+        mat = matrix_trim(mat)
     s_t = is_valid_seq(mat)
     if not s_t:
         return False
