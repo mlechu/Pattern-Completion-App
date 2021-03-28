@@ -37,3 +37,32 @@ def list_concat(l1, l2):
     if len(l1) == len(l2):
         for i in range(len(l1)):
             l1[i] = str(l1[i]) + str(l2[i])
+
+#trims matrix so that all rows and columns are the same length
+def matrix_trim(mat):
+    col_diff = 0
+    row_diff = 0
+    max_col = 0
+    max_row = 0
+    for row in mat:
+        if len(row) > max_col:
+            max_col = len(row)
+    for row in mat:
+        if len(row) != max_col:
+            col_diff = max_col - len(row)
+    col_indices = []
+    col_sizes = []
+    for row in mat:
+        for i in range(len(row)):
+            col_indices.append(i)
+    for i in range(len(mat[0])):
+        col_sizes.append(col_indices.count(col_indices[i]))
+    for i in range(len(mat[0])):
+        if col_sizes[i] > max_row:
+            max_row = col_sizes[i]
+    for i in range(len(mat[0])):
+        if col_sizes[i] != max_row:
+            row_diff = max_row - col_sizes[i]
+    if row_diff == 0 and col_diff == 0:
+        return True
+    return np.array([ele[:(max_row - row_diff + 1)] for ele in mat][:max_col - col_diff + 1])

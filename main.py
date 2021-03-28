@@ -10,7 +10,6 @@ def check_1d(inp):
             
 
 
-
 # Python program to take in a pattern
 # and return a prediction of the next n elements
 if __name__ == '__main__':
