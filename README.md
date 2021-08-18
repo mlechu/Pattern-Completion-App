@@ -2,6 +2,7 @@
 
 - [About](#about)
   - [Our Team](#our-team)
+  - [Using the App](#using-the-app)
 - [Contribution Guidelines](#contribution-guidelines)
   - [Submitting a Pull Request (PR)](#submitting-a-pull-request-pr)
   - [After your Pull Request is Merged](#after-your-pull-request-is-merged)
@@ -27,9 +28,35 @@ This app is a submission for the [WinHacks 2021 competition](https://winhacks-20
 ### Our Team
 
 - [Alexander Lotz](https://github.com/alexanderlotz/)
-- [Emily Chu](https://github.com/emily-chu)
+- [Emily Chu](https://github.com/mlechu)
 - [Ryan Moon](https://github.com/rm00nkh)
 - [Sean Kyer](https://github.com/seankyer)
+
+### Using the App
+A live demo is available here: https://pattern-completion-app.herokuapp.com/
+Some example inputs and outputs are provided below.
+
+![Basic input: 1a, 1b // 2a, 2b](demo/basic-1.png)
+
+![Basic output](demo/basic-2.png)
+
+---
+
+![Verbose input: Col B plant 12, Col C plant 12, ... // Col B plant 13, Col C plant 13 ... ](demo/verbose-1.png)
+
+![Verbose output](demo/verbose-2.png)
+
+---
+
+![Confusing input: 1000a, 1001b, 1002c, 1003d // 1004a, 1005b, 1006c, 1007d](demo/confusing-1.png)
+
+![Confusing output](demo/confusing-2.png)
+
+---
+
+![Almost input: aaa, aab, aac, aad](demo/almost-1.png)
+
+![Almost output](demo/almost-2.png)
 
 ## Contribution Guidelines
 
